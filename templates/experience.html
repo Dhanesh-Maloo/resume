@@ -1,9 +1,32 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="section section-header reveal">
-    <span class="eyebrow">Portfolio</span>
-    <h2>Projects & Certifications</h2>
-    <p>Full-stack builds, security labs, self-driven projects, and continued study.</p>
+    <span class="eyebrow">Career</span>
+    <h2>Experience & Projects</h2>
+    <p>Internships, full-stack builds, security labs, and continued study.</p>
+</div>
+
+<div class="section reveal">
+    <h3 class="cat-title">Internships</h3>
+    <div class="card">
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>Penetration Tester &mdash; Deltaware Solutions</h4>
+                <span>June 2025</span>
+                <p>Hands-on penetration testing and vulnerability assessment work on client-facing systems.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>Software Developer &mdash; Infolabz</h4>
+                <span>July 2022</span>
+                <p>Application development and scripting, building the software-engineering foundation behind my later full-stack projects.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>Ethical Hacker &mdash; Waytoweb Pvt. Ltd.</h4>
+                <span>January 2022</span>
+                <p>Early hands-on exposure to ethical hacking practices and web application security testing.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="section reveal">
@@ -99,30 +122,50 @@
 </div>
 
 <div class="section reveal">
-    <h3 class="cat-title">Hands-On Projects & Labs</h3>
+    <h3 class="cat-title">Academic Projects & Labs</h3>
     <div class="project-grid">
         <div class="project-card">
-            <h3>CSRF Vulnerability Testing in DVWA</h3>
-            <span class="project-meta">Burp Suite &middot; Web Security</span>
+            <h3>Vulnerability Assessment of Web Systems</h3>
+            <span class="project-meta">BTech &middot; OWASP ZAP &middot; SQLMap</span>
             <ul>
-                <li>Used Burp Suite to identify and exploit Cross-Site Request Forgery flaws in Damn Vulnerable Web Application.</li>
-                <li>Documented the attack steps, impact analysis, and mitigation techniques.</li>
+                <li>Conducted penetration testing on web applications using Python, OWASP ZAP, SQLMap, and other tools/libraries.</li>
+                <li>Identified OWASP Top 10 vulnerabilities and created risk-based assessment reports with Nikto to guide mitigation.</li>
             </ul>
         </div>
         <div class="project-card">
-            <h3>Secure Login System (Academic Project)</h3>
-            <span class="project-meta">Python &middot; Secure Coding</span>
+            <h3>IoT Security System</h3>
+            <span class="project-meta">BTech &middot; Arduino &middot; IoT</span>
             <ul>
-                <li>Developed a web-based login system with password hashing, input validation, and CSRF protection.</li>
-                <li>Focused on secure coding best practices.</li>
+                <li>Built an intrusion alert system using IoT sensors and Arduino, triggering alarms via buzzer and email.</li>
             </ul>
         </div>
         <div class="project-card">
-            <h3>Vulnerability Scanning Using OWASP ZAP</h3>
-            <span class="project-meta">OWASP ZAP &middot; Automated Scanning</span>
+            <h3>Safety and Security for Home and Industries</h3>
+            <span class="project-meta">Diploma &middot; Arduino &middot; IoT</span>
             <ul>
-                <li>Performed automated scanning of web apps to detect vulnerabilities like insecure headers, input validation issues, and exposed information.</li>
+                <li>Developed an IoT-based security system using Arduino and sensors to detect intrusions and natural hazards like gas leaks and fire.</li>
+                <li>Implemented real-time alerts via buzzer and email for rapid response in home and industrial environments.</li>
             </ul>
+        </div>
+    </div>
+</div>
+
+<div class="section reveal">
+    <h3 class="cat-title">Achievements</h3>
+    <div class="cert-list">
+        <div class="cert-item">
+            <span class="cert-badge">🔬</span>
+            <div>
+                <div class="cert-name">CSRF Vulnerability Research (DVWA)</div>
+                <div class="cert-org">Co-authored with Dr. Tejas Bhatt &mdash; analyzing attack execution, defense mechanisms, and mitigation strategies &mdash; 2025</div>
+            </div>
+        </div>
+        <div class="cert-item">
+            <span class="cert-badge">🏆</span>
+            <div>
+                <div class="cert-name">2nd Place &mdash; IoT-Based Hackathon</div>
+                <div class="cert-org">Competition</div>
+            </div>
         </div>
     </div>
 </div>
@@ -133,35 +176,29 @@
         <div class="cert-item">
             <span class="cert-badge">🎓</span>
             <div>
-                <div class="cert-name">Introduction to Cybersecurity</div>
-                <div class="cert-org">Cisco Networking Academy &mdash; in progress</div>
+                <div class="cert-name">Cybersecurity Analyst Job Simulation</div>
+                <div class="cert-org">Forage</div>
             </div>
         </div>
         <div class="cert-item">
             <span class="cert-badge">📜</span>
             <div>
-                <div class="cert-name">Ethical Hacking Basics</div>
+                <div class="cert-name">Ethical Hacker Course</div>
+                <div class="cert-org">Cisco</div>
+            </div>
+        </div>
+        <div class="cert-item">
+            <span class="cert-badge">🛡️</span>
+            <div>
+                <div class="cert-name">Foundations of Cybersecurity</div>
+                <div class="cert-org">Google</div>
+            </div>
+        </div>
+        <div class="cert-item">
+            <span class="cert-badge">🔎</span>
+            <div>
+                <div class="cert-name">Digital Forensics Masterclass</div>
                 <div class="cert-org">Udemy</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="section reveal">
-    <h3 class="cat-title">Workshops & Seminars</h3>
-    <div class="cert-list">
-        <div class="cert-item">
-            <span class="cert-badge">🧑‍💻</span>
-            <div>
-                <div class="cert-name">CyberSecCon 2024</div>
-                <div class="cert-org">Workshop on Ethical Hacking and Digital Forensics</div>
-            </div>
-        </div>
-        <div class="cert-item">
-            <span class="cert-badge">🐛</span>
-            <div>
-                <div class="cert-name">Bug Bounty Hunting Bootcamp</div>
-                <div class="cert-org">Participant</div>
             </div>
         </div>
     </div>
