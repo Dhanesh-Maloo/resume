@@ -1,24 +1,77 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="section">
-    <h2>Experience</h2>
-    <div>
-        <h3>Cybersecurity Analyst - SecureTech Solutions</h3>
-        <p><i>2022 - Present</i></p>
-        <ul>
-            <li>Conducted vulnerability assessments and penetration testing for enterprise clients.</li>
-            <li>Developed and implemented security policies and incident response plans.</li>
-            <li>Monitored network traffic for suspicious activity and responded to security incidents.</li>
-        </ul>
-    </div>
-    <div style="margin-top:2rem;">
-        <h3>Security Engineer - InfoSafe Corp</h3>
-        <p><i>2020 - 2022</i></p>
-        <ul>
-            <li>Designed and deployed secure network architectures.</li>
-            <li>Automated security monitoring and reporting tools.</li>
-            <li>Trained staff on cybersecurity best practices and awareness.</li>
-        </ul>
+<div class="section section-header reveal">
+    <span class="eyebrow">Portfolio</span>
+    <h2>Projects & Certifications</h2>
+    <p>Hands-on learning through security labs, self-driven projects, and continued study.</p>
+</div>
+
+<div class="section reveal">
+    <h3 class="cat-title">Hands-On Projects & Labs</h3>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>CSRF Vulnerability Testing in DVWA</h3>
+            <span class="project-meta">Burp Suite &middot; Web Security</span>
+            <ul>
+                <li>Used Burp Suite to identify and exploit Cross-Site Request Forgery flaws in Damn Vulnerable Web Application.</li>
+                <li>Documented the attack steps, impact analysis, and mitigation techniques.</li>
+            </ul>
+        </div>
+        <div class="project-card">
+            <h3>Secure Login System (Academic Project)</h3>
+            <span class="project-meta">Python &middot; Secure Coding</span>
+            <ul>
+                <li>Developed a web-based login system with password hashing, input validation, and CSRF protection.</li>
+                <li>Focused on secure coding best practices.</li>
+            </ul>
+        </div>
+        <div class="project-card">
+            <h3>Vulnerability Scanning Using OWASP ZAP</h3>
+            <span class="project-meta">OWASP ZAP &middot; Automated Scanning</span>
+            <ul>
+                <li>Performed automated scanning of web apps to detect vulnerabilities like insecure headers, input validation issues, and exposed information.</li>
+            </ul>
+        </div>
     </div>
 </div>
-{% endblock %} 
+
+<div class="section reveal">
+    <h3 class="cat-title">Certifications</h3>
+    <div class="cert-list">
+        <div class="cert-item">
+            <span class="cert-badge">🎓</span>
+            <div>
+                <div class="cert-name">Introduction to Cybersecurity</div>
+                <div class="cert-org">Cisco Networking Academy &mdash; in progress</div>
+            </div>
+        </div>
+        <div class="cert-item">
+            <span class="cert-badge">📜</span>
+            <div>
+                <div class="cert-name">Ethical Hacking Basics</div>
+                <div class="cert-org">Udemy</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section reveal">
+    <h3 class="cat-title">Workshops & Seminars</h3>
+    <div class="cert-list">
+        <div class="cert-item">
+            <span class="cert-badge">🧑‍💻</span>
+            <div>
+                <div class="cert-name">CyberSecCon 2024</div>
+                <div class="cert-org">Workshop on Ethical Hacking and Digital Forensics</div>
+            </div>
+        </div>
+        <div class="cert-item">
+            <span class="cert-badge">🐛</span>
+            <div>
+                <div class="cert-name">Bug Bounty Hunting Bootcamp</div>
+                <div class="cert-org">Participant</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
