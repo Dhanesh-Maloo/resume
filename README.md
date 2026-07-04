@@ -4,6 +4,15 @@ A cybersecurity-themed portfolio website showcasing skills, experience, and proj
 
 ## Deployment Instructions
 
+### Vercel (recommended)
+
+1. Create an account on [Vercel](https://vercel.com)
+2. Click "Add New..." &rarr; "Project" and import this GitHub repository
+3. Vercel will detect `vercel.json` and deploy the Flask app automatically &mdash; no build/start command needed
+4. You'll get a URL like `https://resume.vercel.app`
+
+### Render
+
 1. Create an account on [Render.com](https://render.com)
 2. Click on "New +" and select "Web Service"
 3. Connect your GitHub repository

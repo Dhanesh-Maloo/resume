@@ -444,8 +444,40 @@ a {
 .project-card ul {
     color: var(--text-dim);
     padding-left: 1.1rem;
-    margin: 0;
+    margin: 0 0 1rem;
     line-height: 1.6;
+}
+
+.project-card .tag-row {
+    margin-bottom: 1rem;
+}
+
+.project-card .tag {
+    font-size: 0.78rem;
+    padding: 0.3rem 0.7rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: auto;
+}
+
+.project-links a {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+    color: var(--green);
+}
+
+.project-grid .project-card {
+    display: flex;
+    flex-direction: column;
 }
 
 .cert-list {
@@ -557,6 +589,12 @@ a {
     outline: none;
     border-color: var(--cyan);
     box-shadow: 0 0 0 3px rgba(0, 229, 255, 0.15);
+}
+
+.form-hint {
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
 }
 
 .contact-card {

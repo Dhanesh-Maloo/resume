@@ -89,6 +89,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  /* ---------- Contact form ---------- */
+  var contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = contactForm.elements['name'].value.trim();
+      var email = contactForm.elements['email'].value.trim();
+      var message = contactForm.elements['message'].value.trim();
+
+      var subject = 'Portfolio contact from ' + (name || 'website visitor');
+      var body = message + '\n\n— ' + (name || 'Anonymous') + (email ? ' (' + email + ')' : '');
+      var mailto = 'mailto:dhaneshmaloo09@gmail.com' +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(body);
+
+      window.location.href = mailto;
+    });
+  }
+
   /* ---------- Hero terminal typing effect ---------- */
   var typingEl = document.querySelector('.typing-text');
   if (typingEl) {

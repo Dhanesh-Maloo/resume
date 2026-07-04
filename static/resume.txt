@@ -1,62 +1,54 @@
 Dhanesh Maloo
-📍 Ahmedabad, Gujarat, India
-📞 +91-7016753260
 📧 dhaneshmaloo09@gmail.com
-🌐 GitHub: github.com/Dhanesh-hack
-🌐 LinkedIn: linkedin.com/in/dhanesh-maloo-27228124b
+📞 +91-7016753260
+🌐 TryHackMe | LinkedIn | GitHub
 
-🎯 OBJECTIVE
-Motivated and detail-oriented BTech Cyber Security student at GLS University, seeking an entry-level position or internship in the field of cybersecurity. Eager to apply academic knowledge and practical skills to real-world security challenges and contribute to securing digital systems.
+🎯 SUMMARY
+Aspiring Software & Automation Developer with experience in application development, scripting, APIs, and workflow
+automation. Skilled in Python, SQL, and web technologies with strong interest in business process automation platforms.
 
 🎓 EDUCATION
-GLS University, Ahmedabad
-Bachelor of Technology (BTech) in Cyber Security
-Expected Graduation: 2026
-* CGPA: 8.11
-* Relevant Coursework: Network Security, Ethical Hacking, Cryptography, Web Application Security, Information Security Management
+GLS University — BTech in Computer Science (Cyber Security)
+2023 – 2026 | SGPA: 8.95 | 6th Rank
+
+Government Polytechnic, Ahmedabad — Diploma in IT Engineering
+2020 – 2023 | CGPA: 9.42
+
+💼 INTERNSHIPS
+Deltaware Solutions — Penetration Tester (June 2025)
+Infolabz — Software Developer (July 2022)
+Waytoweb Pvt. Ltd. — Ethical Hacker (Jan 2022)
+
+📁 PROJECTS
+Vulnerability Assessment of Web Systems (BTech)
+Conducted penetration testing on web applications using Python and OWASP ZAP, SQLMap, and other tools/libraries.
+Identified OWASP Top 10 vulnerabilities and created risk-based assessment reports (Nikto) to guide mitigation.
+
+Phishing Link Email Scanner (BTech)
+Developed a Python-based tool to detect phishing URLs in emails using Regex, URL reputation APIs, and basic machine
+learning. Enhanced email security awareness and automated threat detection.
+
+IoT Security System (BTech)
+Built an intrusion alert system using IoT sensors and Arduino, triggering alarms via buzzer and email.
+
+Safety and Security for Home and Industries (Diploma)
+Developed an IoT-based security system using Arduino and sensors to detect intrusions and natural hazards like gas
+leaks and fire. Implemented real-time alerts via buzzer and email for rapid response in home and industrial environments.
+
+🏆 ACHIEVEMENTS
+Research: Conducting research on Cross-Site Request Forgery (CSRF) vulnerabilities using DVWA to analyze attack
+execution and defense mechanisms, exploring mitigation strategies to enhance web application security. (2025)
+— Dr. Tejas Bhatt, Dhanesh Maloo
+
+2nd place in IoT-based Hackathon.
 
 🛠️ SKILLS
-Cybersecurity & Tools:
-* Vulnerability Assessment, Penetration Testing (VAPT)
-* OWASP Top 10, Burp Suite, OWASP ZAP, Wireshark
-* Kali Linux, Metasploit Framework
-* Web Security Testing (CSRF, XSS, SQLi)
+Languages: C++, Python, Java, SQL, Dart, HTML, CSS, JavaScript, PHP
+Tools: Burp Suite, Nikto, Wireshark, Nmap, Cisco Packet Tracer, Kali Linux, OWASP ZAP
+Soft Skills: Active Listener, Critical Thinking, Problem Solving, Communication
 
-Programming & Scripting:
-* Python (basic scripting), Bash
-* HTML, JavaScript (for understanding web vulnerabilities)
-
-Soft Skills:
-* Problem-Solving, Communication, Team Collaboration
-* Report Writing, Attention to Detail
-
-📁 PROJECTS & LABS
-1. CSRF Vulnerability Testing in DVWA
-* Used Burp Suite to identify and exploit Cross-Site Request Forgery flaws in Damn Vulnerable Web Application
-* Documented the attack steps, impact analysis, and mitigation techniques
-
-2. Secure Login System (Academic Project)
-* Developed a web-based login system with password hashing, input validation, and CSRF protection
-* Focused on secure coding best practices
-
-3. Vulnerability Scanning Using OWASP ZAP
-* Performed automated scanning of web apps to detect vulnerabilities like insecure headers, input validation issues, and exposed information
-
-🏆 CERTIFICATIONS
-* Introduction to Cybersecurity – Cisco Networking Academy (in progress)
-* Ethical Hacking Basics – Udemy
-
-📚 WORKSHOPS & SEMINARS
-* Attended CyberSecCon 2024 – Workshop on Ethical Hacking and Digital Forensics
-* Participated in Bug Bounty Hunting Bootcamp
-
-💼 CAREER INTERESTS
-* Cybersecurity Analyst
-* SOC Analyst
-* Web Application Security Tester
-* Ethical Hacker / Penetration Tester
-
-🗣️ LANGUAGES
-* English – Fluent
-* Hindi – Native
-* Gujarati – Fluent 
+📜 CERTIFICATES
+Cybersecurity Analyst Job Simulation — Forage
+Ethical Hacker Course — Cisco
+Foundations of Cybersecurity — Google
+Digital Forensics Masterclass — Udemy
