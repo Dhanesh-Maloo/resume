@@ -1,21 +1,33 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="section">
-    <h2>Contact</h2>
-    <form method="post" action="#" style="max-width:400px;margin:auto;">
-        <div style="margin-bottom:1rem;">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" style="width:100%;padding:0.5rem;">
+<div class="section reveal">
+    <div class="section-header">
+        <span class="eyebrow">Contact</span>
+        <h2>Let's Work Together</h2>
+    </div>
+
+    <div class="card contact-card">
+        <form method="post" action="#">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="button">Send Message</button>
+        </form>
+
+        <div class="contact-links">
+            <a href="mailto:dhaneshmaloo09@gmail.com">Email</a>
+            <a href="https://github.com/Dhanesh-hack" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/dhanesh-maloo-27228124b/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
-        <div style="margin-bottom:1rem;">
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" style="width:100%;padding:0.5rem;">
-        </div>
-        <div style="margin-bottom:1rem;">
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" style="width:100%;padding:0.5rem;"></textarea>
-        </div>
-        <button type="submit" class="button">Send</button>
-    </form>
+    </div>
 </div>
-{% endblock %} 
+{% endblock %}

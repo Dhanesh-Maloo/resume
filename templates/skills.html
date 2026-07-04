@@ -1,24 +1,70 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="section">
-    <h2>Core Skills</h2>
+<div class="section section-header reveal">
+    <span class="eyebrow">Skills</span>
+    <h2>What I Bring to the Table</h2>
+    <p>A security-first, hands-on approach to finding and fixing real vulnerabilities.</p>
+</div>
+
+<div class="section skill-category reveal">
+    <h3 class="cat-title">Core Competencies</h3>
     <div class="skill-grid">
         <div class="skill-card">
-            <h3>Security Analysis</h3>
-            <p>Advanced threat detection and vulnerability assessment</p>
+            <span class="skill-icon">🛡️</span>
+            <h3>Vulnerability Assessment & Pentesting</h3>
+            <p>Identifying and exploiting security weaknesses through structured VAPT methodology and OWASP Top 10 guidelines.</p>
         </div>
         <div class="skill-card">
+            <span class="skill-icon">🧪</span>
+            <h3>Web Security Testing</h3>
+            <p>Testing web applications for CSRF, XSS, and SQLi flaws using Burp Suite and OWASP ZAP.</p>
+        </div>
+        <div class="skill-card">
+            <span class="skill-icon">🌐</span>
+            <h3>Network Security & Traffic Analysis</h3>
+            <p>Capturing and analyzing network traffic with Wireshark to spot anomalies and potential threats.</p>
+        </div>
+        <div class="skill-card">
+            <span class="skill-icon">🐧</span>
+            <h3>Ethical Hacking</h3>
+            <p>Using Kali Linux and Metasploit Framework to simulate attacks and uncover exploitable weaknesses.</p>
+        </div>
+        <div class="skill-card">
+            <span class="skill-icon">🔍</span>
             <h3>Secure Coding</h3>
-            <p>Implementation of security best practices in development</p>
+            <p>Applying secure coding practices such as input validation and password hashing to reduce attack surface.</p>
         </div>
         <div class="skill-card">
-            <h3>Network Security</h3>
-            <p>Network infrastructure protection and monitoring</p>
-        </div>
-        <div class="skill-card">
+            <span class="skill-icon">🔐</span>
             <h3>Cryptography</h3>
-            <p>Implementation of encryption and security protocols</p>
+            <p>Grounded in cryptography coursework, applying encryption concepts to protect data and secure communications.</p>
         </div>
     </div>
 </div>
-{% endblock %} 
+
+<div class="section skill-category reveal">
+    <h3 class="cat-title">Tools & Platforms</h3>
+    <div class="tag-row">
+        <span class="tag">Burp Suite</span>
+        <span class="tag">OWASP ZAP</span>
+        <span class="tag">Wireshark</span>
+        <span class="tag">Kali Linux</span>
+        <span class="tag">Metasploit Framework</span>
+        <span class="tag">Python</span>
+        <span class="tag">Bash</span>
+        <span class="tag">HTML</span>
+        <span class="tag">JavaScript</span>
+    </div>
+</div>
+
+<div class="section skill-category reveal">
+    <h3 class="cat-title">Soft Skills</h3>
+    <div class="tag-row">
+        <span class="tag">Problem-Solving</span>
+        <span class="tag">Communication</span>
+        <span class="tag">Team Collaboration</span>
+        <span class="tag">Report Writing</span>
+        <span class="tag">Attention to Detail</span>
+    </div>
+</div>
+{% endblock %}
