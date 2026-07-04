@@ -3,7 +3,99 @@
 <div class="section section-header reveal">
     <span class="eyebrow">Portfolio</span>
     <h2>Projects & Certifications</h2>
-    <p>Hands-on learning through security labs, self-driven projects, and continued study.</p>
+    <p>Full-stack builds, security labs, self-driven projects, and continued study.</p>
+</div>
+
+<div class="section reveal">
+    <h3 class="cat-title">Software Projects</h3>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>CAT Prep Platform</h3>
+            <span class="project-meta">Full-Stack &middot; Exam Prep</span>
+            <ul>
+                <li>Built a mock-test engine with per-section timers, auto-submit, and CAT-accurate scoring (+3/-1 MCQ, +3/0 TITA) with a percentile lookup.</li>
+                <li>Designed a study-plan generator that schedules weekly topics by prioritizing the lowest-accuracy or never-attempted subtopics.</li>
+                <li>Implemented an SM-2-lite spaced-repetition algorithm for flashcards, backed by unit tests for scoring, exam sessions, and study plans.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">React</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Zustand</span>
+            </div>
+            <div class="project-links">
+                <a href="https://cat-prep-platform.pages.dev" target="_blank" rel="noopener">Live Demo</a>
+                <a href="https://github.com/dhanesh-maloo/cat-prep-platform" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>PitaJi Finance Manager</h3>
+            <span class="project-meta">Full-Stack &middot; Personal Finance</span>
+            <ul>
+                <li>Built a unified dashboard to track Indian financial holdings &mdash; FDs, RDs, PPF, mutual funds, stocks, gold, insurance, and loans &mdash; with net-worth history and maturity alerts.</li>
+                <li>Developed an Indian income-tax (ITR) helper and capital-gains calculator as dedicated backend modules.</li>
+                <li>Added OCR-based FD receipt scanning to auto-fill deposit forms from a photo, plus PDF/Excel report exports and a rule-based finance chatbot.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">FastAPI</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">React</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/dhanesh-maloo/pitaji-finance" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>IT Asset Management Platform</h3>
+            <span class="project-meta">Full-Stack &middot; Multi-Tenant SaaS</span>
+            <ul>
+                <li>Built a multi-tenant asset-tracking platform with 5 role tiers, isolating each tenant's data across 140+ API routes.</li>
+                <li>Implemented the full asset lifecycle &mdash; bulk import, QR-code labels, transfers, reservations &mdash; plus a helpdesk ticketing system with approval workflows.</li>
+                <li>Added a background scheduler that notifies tenant admins over Slack about warranty/maintenance deadlines, with a pytest suite covering auth, assets, and billing.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">FastAPI</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">React</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/dhanesh-maloo/asset-management" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Warehouse Management System</h3>
+            <span class="project-meta">Full-Stack &middot; Multi-Tenant</span>
+            <ul>
+                <li>Built a multi-tenant warehouse operations platform covering inbound receiving, inspections, deployment, retrieval, and disposal workflows for IT assets.</li>
+                <li>Enforced tenant isolation with an async-context middleware and role-based route guards on top of JWT auth.</li>
+                <li>Designed an append-only billing ledger &mdash; corrections post as new rows, direct edits blocked at the database level &mdash; with a daily cron job that accrues monthly storage charges per client.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">NestJS</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">TypeScript</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/dhanesh-maloo/warehouse-mangement-system-" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>LinkGuard</h3>
+            <span class="project-meta">Flask &middot; Phishing Detection</span>
+            <ul>
+                <li>Built a phishing-detection scanner that analyzes URLs for brand impersonation, shortener abuse, IP-literal hosts, and missing HTTPS.</li>
+                <li>Wrote an email-analysis module that parses raw headers/content to flag sender-domain mismatches, urgency language, and risky attachments, producing a 0&ndash;100 risk score.</li>
+                <li>Implemented account signup/login with hashed passwords on a Flask backend.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">SQLAlchemy</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/dhanesh-maloo/link-guard" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="section reveal">
