@@ -188,6 +188,27 @@ a {
     color: transparent;
 }
 
+/* ---------- AVATAR ---------- */
+.avatar {
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border);
+    box-shadow: 0 0 0 4px rgba(6, 10, 13, 0.6), 0 0 30px rgba(0, 255, 157, 0.25);
+}
+
+.avatar-lg {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 1.5rem;
+}
+
+.avatar-md {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 1.2rem;
+}
+
 /* ---------- HERO ---------- */
 .hero {
     text-align: center;
