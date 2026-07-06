@@ -511,6 +511,26 @@ a {
     font-size: 0.88rem;
 }
 
+/* ---------- PULL QUOTE ---------- */
+.pull-quote {
+    border-left: 3px solid var(--green);
+    margin: 0 0 2rem;
+}
+
+.pull-quote p {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.pull-quote footer {
+    margin-top: 0.8rem;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+}
+
 /* ---------- ABOUT ---------- */
 .about-grid {
     display: grid;
