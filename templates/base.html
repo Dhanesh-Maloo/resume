@@ -18,13 +18,10 @@
     <meta name="twitter:description" content="Tech x Business — Zoho, AI, and Cybersecurity. Wired to build, trained to break.">
     <meta name="twitter:image" content="https://resume-nu-five-95.vercel.app/static/og-image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <canvas id="bg-canvas"></canvas>
-    <div class="scanlines" aria-hidden="true"></div>
-
     <header>
         <nav class="navbar">
             <a href="/" class="logo"><span class="bracket">&lt;</span>Dhanesh<span class="bracket">/&gt;</span></a>
@@ -45,9 +42,9 @@
         {% block content %}{% endblock %}
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="footer-inner">
-            <p>&copy; 2026 Dhanesh Maloo &mdash; Built with Flask &amp; Three.js</p>
+            <p>&copy; 2026 Dhanesh Maloo &mdash; Built with Flask</p>
             <div class="footer-links">
                 <a href="https://github.com/Dhanesh-hack" target="_blank" rel="noopener">GitHub</a>
                 <a href="https://www.linkedin.com/in/dhanesh-maloo-27228124b/" target="_blank" rel="noopener">LinkedIn</a>
@@ -56,8 +53,6 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
-    <script src="{{ url_for('static', filename='three-bg.js') }}" defer></script>
     <script src="{{ url_for('static', filename='script.js') }}" defer></script>
 </body>
 </html>
