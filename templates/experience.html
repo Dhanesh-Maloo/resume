@@ -11,9 +11,9 @@
     <div class="card">
         <div class="timeline">
             <div class="timeline-item">
-                <h4>Web Developer &mdash; iValue Systech Pvt. Ltd.</h4>
+                <h4>Web Developer / Zoho Solutions Engineer &mdash; iValue Systech Pvt. Ltd.</h4>
                 <span>February 2026 &ndash; Present &middot; Ahmedabad, Gujarat &middot; On-site</span>
-                <p>Building internal tools using the full Zoho ecosystem (Creator, CRM, Books, Flow, Backstage, MCP) and AI stacks like Claude API and Claude Code to eliminate repetitive manual work.</p>
+                <p>Delivering custom Zoho Creator applications (Warehouse Management, ShiftSync HRMS, Attendance, Asset Management, Courier Zone Automation, Payroll) and architecting IValue WMS, a multi-tenant IT-asset lifecycle platform (React, NestJS, PostgreSQL) with an append-only billing ledger and SLA engine. Also run client requirement analysis, gap analysis, and demos across CRM, Campaigns, Payroll, People, and Backstage, alongside AI-assisted tooling with Zoho Agent AI, Claude API, and Claude Code.</p>
             </div>
             <div class="timeline-item">
                 <h4>Penetration Tester &mdash; Deltaware Solutions</h4>
@@ -37,24 +37,6 @@
 <div class="section reveal">
     <h3 class="cat-title">Software Projects</h3>
     <div class="project-grid">
-        <div class="project-card">
-            <h3>CAT Prep Platform</h3>
-            <span class="project-meta">Full-Stack &middot; Exam Prep</span>
-            <ul>
-                <li>Built a mock-test engine with per-section timers, auto-submit, and CAT-accurate scoring (+3/-1 MCQ, +3/0 TITA) with a percentile lookup.</li>
-                <li>Designed a study-plan generator that schedules weekly topics by prioritizing the lowest-accuracy or never-attempted subtopics.</li>
-                <li>Implemented an SM-2-lite spaced-repetition algorithm for flashcards, backed by unit tests for scoring, exam sessions, and study plans.</li>
-            </ul>
-            <div class="tag-row">
-                <span class="tag">React</span>
-                <span class="tag">Supabase</span>
-                <span class="tag">Zustand</span>
-            </div>
-            <div class="project-links">
-                <a href="https://cat-prep-platform.pages.dev" target="_blank" rel="noopener">Live Demo</a>
-                <a href="https://github.com/dhanesh-maloo/cat-prep-platform" target="_blank" rel="noopener">GitHub</a>
-            </div>
-        </div>
         <div class="project-card">
             <h3>PitaJi Finance Manager</h3>
             <span class="project-meta">Full-Stack &middot; Personal Finance</span>
@@ -94,11 +76,12 @@
             <h3>Warehouse Management System</h3>
             <span class="project-meta">Full-Stack &middot; Built at iValue Systech</span>
             <ul>
-                <li>Built a multi-tenant warehouse operations platform covering inbound receiving, inspections, deployment, retrieval, and disposal workflows for IT assets.</li>
-                <li>Enforced tenant isolation with an async-context middleware and role-based route guards on top of JWT auth.</li>
-                <li>Designed an append-only billing ledger &mdash; corrections post as new rows, direct edits blocked at the database level &mdash; with a daily cron job that accrues monthly storage charges per client.</li>
+                <li>Built a multi-tenant warehouse operations platform covering inbound receiving, inspections, deployment, retrieval, repair/resale, and disposal workflows for IT assets.</li>
+                <li>Enforced tenant isolation with an async-context middleware and role-based route guards on top of JWT auth, with versioned rate cards and a business-hours-aware SLA engine.</li>
+                <li>Designed an append-only billing ledger &mdash; corrections post as new rows, direct edits blocked at the database level &mdash; turning every operational action into priced, timestamped billing data, plus per-device ITAD wipe certification.</li>
             </ul>
             <div class="tag-row">
+                <span class="tag">React</span>
                 <span class="tag">NestJS</span>
                 <span class="tag">PostgreSQL</span>
                 <span class="tag">TypeScript</span>
@@ -106,6 +89,19 @@
             <div class="project-links">
                 <a href="https://warehouse-mangement-system-web.vercel.app/login" target="_blank" rel="noopener">Live Demo</a>
                 <a href="https://github.com/dhanesh-maloo/warehouse-mangement-system-" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>ShiftSync</h3>
+            <span class="project-meta">Full-Stack &middot; Built at iValue Systech</span>
+            <ul>
+                <li>Built a standalone attendance and shift-rostering app for staff working dynamic, multiple shifts, as a zero-license-cost alternative to Zoho People.</li>
+                <li>Implemented geofenced check-in/check-out, leave management, and payroll export from a single roster view.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">React</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Cloudflare Pages</span>
             </div>
         </div>
         <div class="project-card">
@@ -125,20 +121,47 @@
                 <a href="https://github.com/dhanesh-maloo/link-guard" target="_blank" rel="noopener">GitHub</a>
             </div>
         </div>
+        <div class="project-card">
+            <h3>Vulnerability Assessment Platform</h3>
+            <span class="project-meta">Self-Hosted &middot; VAPT &middot; AI Copilot</span>
+            <ul>
+                <li>Built a self-hosted VA platform combining Python-based web and network scanning (nmap, OWASP ZAP) with CVSS/EPSS/CISA-KEV risk scoring, findings triage, and OWASP Top 10 / PCI-DSS / ISO 27001 compliance mapping.</li>
+                <li>Added an AI security copilot and attack-chain synthesis powered by the Claude API, answering questions over real scan history via tool calls.</li>
+                <li>Hardened the app with a nonce-based CSP, CSRF protection, bcrypt hashing, and SSRF-safe scan-target validation; shipped a one-command Docker Compose deployment.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">PHP</span>
+                <span class="tag">Python</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Claude API</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Dhanesh-Maloo/vulnerability-assement" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Maninagar 3D</h3>
+            <span class="project-meta">React Three Fiber &middot; 3D / WebGL</span>
+            <ul>
+                <li>Built a 3D walkthrough of a stylized Maninagar, Ahmedabad crossroads with first-person movement and pointer-lock controls.</li>
+                <li>Made four interactive banks (IndusInd, Bank of Baroda, SBI, HDFC) enterable to open savings accounts, deposit/withdraw, and open Fixed Deposits with real slab interest rates and compound-interest maturity calculations.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">React</span>
+                <span class="tag">Three.js</span>
+                <span class="tag">Vite</span>
+            </div>
+            <div class="project-links">
+                <a href="https://dhanesh-maloo.github.io/maninagar-3d/" target="_blank" rel="noopener">Live Demo</a>
+                <a href="https://github.com/Dhanesh-Maloo/maninagar-3d" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="section reveal">
     <h3 class="cat-title">Academic Projects & Labs</h3>
     <div class="project-grid">
-        <div class="project-card">
-            <h3>Vulnerability Assessment of Web Systems</h3>
-            <span class="project-meta">BTech &middot; OWASP ZAP &middot; SQLMap</span>
-            <ul>
-                <li>Conducted penetration testing on web applications using Python, OWASP ZAP, SQLMap, and other tools/libraries.</li>
-                <li>Identified OWASP Top 10 vulnerabilities and created risk-based assessment reports with Nikto to guide mitigation.</li>
-            </ul>
-        </div>
         <div class="project-card">
             <h3>IoT Security System</h3>
             <span class="project-meta">BTech &middot; Arduino &middot; IoT</span>

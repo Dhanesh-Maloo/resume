@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function () {
+        try {
+            var t = localStorage.getItem('theme-preference');
+            if (t === 'dark' || t === 'light') {
+                document.documentElement.setAttribute('data-theme', t);
+            }
+        } catch (e) {}
+    })();
+    </script>
     <title>{% block title %}Dhanesh Maloo | AI Builder, Zoho Developer & Cybersecurity Grad{% endblock %}</title>
     <meta name="description" content="Dhanesh Maloo — AI Builder, Zoho Developer &amp; Cybersecurity grad. Wired to build, trained to break.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
@@ -34,6 +44,9 @@
                 <a href="/skills" data-path="/skills">Skills</a>
                 <a href="/experience" data-path="/experience">Experience</a>
                 <a href="/contact" data-path="/contact">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                    <span class="theme-icon" aria-hidden="true">🌙</span>
+                </button>
             </div>
         </nav>
     </header>
@@ -46,7 +59,7 @@
         <div class="footer-inner">
             <p>&copy; 2026 Dhanesh Maloo &mdash; Built with Flask</p>
             <div class="footer-links">
-                <a href="https://github.com/Dhanesh-hack" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://github.com/Dhanesh-Maloo" target="_blank" rel="noopener">GitHub</a>
                 <a href="https://www.linkedin.com/in/dhanesh-maloo-27228124b/" target="_blank" rel="noopener">LinkedIn</a>
                 <a href="mailto:dhaneshmaloo09@gmail.com">Email</a>
             </div>

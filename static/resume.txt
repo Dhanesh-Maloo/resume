@@ -4,48 +4,78 @@ Dhanesh Maloo
 🌐 TryHackMe | LinkedIn | GitHub
 
 🎯 SUMMARY
-Aspiring Software & Automation Developer with experience in application development, scripting, APIs, and workflow
-automation. Skilled in Python, SQL, and web technologies with strong interest in business process automation platforms.
+Zoho Developer and AI-automation builder with hands-on experience across the full Zoho ecosystem (Creator, CRM, Campaigns, Payroll, People, Expense, Backstage, Billing, Analytics, Cliq, Agent AI) and modern full-stack development (React, NestJS, FastAPI, PostgreSQL). Currently building multi-tenant SaaS platforms and AI-assisted internal tools at iValue Systech, combining Deluge scripting and custom app development with client requirement analysis, solution design, documentation, and demos. Backed by a Cybersecurity BTech and prior VAPT/ethical-hacking internship experience.
 
 🎓 EDUCATION
 GLS University — BTech in Computer Science (Cyber Security)
-2023 – 2026 | SGPA: 8.95 | 6th Rank
+2023 – 2026 (Expected) | SGPA: 8.95 | 6th Rank
 
 Government Polytechnic, Ahmedabad — Diploma in IT Engineering
 2020 – 2023 | CGPA: 9.42
 
-💼 INTERNSHIPS
-Deltaware Solutions — Penetration Tester (June 2025)
-Infolabz — Software Developer (July 2022)
-Waytoweb Pvt. Ltd. — Ethical Hacker (Jan 2022)
+💼 EXPERIENCE
+Web Developer / Zoho Solutions Engineer — iValue Systech Pvt. Ltd. (Feb 2026 – Present)
+Delivered custom Zoho Creator applications — Warehouse Management, ShiftSync HRMS, Attendance Management, Asset Management, FMS Engineer App, Courier Zone Automation, Stationery Management, and Payroll — across forms, workflows, Deluge scripting, widgets, and role-based permissions.
+Architected and presented IValue WMS, a multi-tenant IT-asset lifecycle platform (React 18/TypeScript, NestJS/Prisma, PostgreSQL, Redis/BullMQ, S3-compatible storage) featuring an append-only billing ledger, versioned rate cards, a business-hours-aware SLA engine, and per-device ITAD certification.
+Built ShiftSync, a standalone React + Supabase attendance and shift-rostering app deployed on Cloudflare Pages, as a zero-license-cost alternative to Zoho People for staff working dynamic, multiple shifts.
+Ran client requirement gathering, gap analysis, and solution demos across CRM, Campaigns, Marketing Automation, Payroll, People, Expense, and Backstage engagements for clients spanning logistics, hospitality, and manufacturing.
+Authored SOPs, integration guides, plan-comparison documents, and case studies; explored AI-assisted workflows with Zoho Agent AI, Claude API, and Claude Code (task bots, HR assistant, duplicate-receipt detection).
+
+Penetration Tester — Deltaware Solutions (Jun 2025 – Jul 2025)
+Hands-on penetration testing and vulnerability assessment work on client-facing systems.
+
+Software Development Intern (IoT & Django) — InfoLabz (Nov 2022 – Mar 2023)
+Web application and back-end development, building the software-engineering foundation behind later full-stack projects.
+
+Ethical Hacker — Waytoweb Solutions (Mar 2022 – Apr 2022)
+Early hands-on exposure to ethical hacking practices, OSINT, and web application security testing.
 
 📁 PROJECTS
-Vulnerability Assessment of Web Systems (BTech)
-Conducted penetration testing on web applications using Python and OWASP ZAP, SQLMap, and other tools/libraries.
-Identified OWASP Top 10 vulnerabilities and created risk-based assessment reports (Nikto) to guide mitigation.
+IValue WMS — Warehouse Management Platform (iValue Systech)
+Multi-tenant IT-asset lifecycle platform covering receive, inspect, store, deploy, retrieve, repair/resell, and dispose workflows, with tenant isolation enforced server-side and an append-only ledger that turns warehouse operations directly into billing data.
+Stack: React, TypeScript, NestJS, Prisma, PostgreSQL, Redis, BullMQ, AWS S3.
 
-Phishing Link Email Scanner (BTech)
-Developed a Python-based tool to detect phishing URLs in emails using Regex, URL reputation APIs, and basic machine
-learning. Enhanced email security awareness and automated threat detection.
+ShiftSync (iValue Systech)
+Standalone attendance and shift-rostering app with geofenced check-in/out, leave management, and payroll export, built as a zero-license alternative to Zoho People.
+Stack: React, Supabase, Cloudflare Pages.
 
-IoT Security System (BTech)
-Built an intrusion alert system using IoT sensors and Arduino, triggering alarms via buzzer and email.
+PitaJi Finance Manager
+Unified dashboard tracking Indian financial holdings (FDs, RDs, PPF, mutual funds, stocks, gold, insurance, loans) with an ITR/capital-gains calculator, OCR-based FD receipt scanning, and a rule-based finance chatbot.
+Stack: FastAPI, MongoDB, React.
 
-Safety and Security for Home and Industries (Diploma)
-Developed an IoT-based security system using Arduino and sensors to detect intrusions and natural hazards like gas
-leaks and fire. Implemented real-time alerts via buzzer and email for rapid response in home and industrial environments.
+IT Asset Management Platform (iValue Systech)
+Multi-tenant asset-tracking platform with 5 role tiers, 140+ API routes, full asset lifecycle management (bulk import, QR labels, transfers, reservations), and a Slack-based scheduler for warranty/maintenance alerts.
+Stack: FastAPI, MongoDB, React.
+
+LinkGuard
+Phishing-detection scanner analyzing URLs and email headers for brand impersonation, sender-domain mismatches, and risky attachments, producing a 0–100 risk score.
+Stack: Python, Flask, SQLAlchemy.
+
+Vulnerability Assessment Platform
+Self-hosted VA platform combining Python-based web/network scanning (nmap, OWASP ZAP) with CVSS/EPSS/CISA-KEV risk scoring, findings triage, and OWASP Top 10/PCI-DSS/ISO 27001 compliance mapping. Added an AI security copilot and attack-chain synthesis using the Claude API, plus CSRF/CSP hardening and a one-command Docker deployment.
+Stack: PHP, Python, MySQL, Claude API.
+
+Maninagar 3D
+3D walkthrough of a stylized Ahmedabad crossroads with first-person movement; four interactive banks let you open accounts, deposit/withdraw, and open Fixed Deposits with real slab interest rates and compound-interest maturity calculations.
+Stack: React, Three.js, Vite.
+
+IoT Security System (BTech) / Safety and Security for Home and Industries (Diploma)
+Built intrusion-alert systems using Arduino and sensors, triggering real-time buzzer/email alerts for home and industrial environments, including gas-leak and fire detection.
 
 🏆 ACHIEVEMENTS
-Research: Conducting research on Cross-Site Request Forgery (CSRF) vulnerabilities using DVWA to analyze attack
-execution and defense mechanisms, exploring mitigation strategies to enhance web application security. (2025)
-— Dr. Tejas Bhatt, Dhanesh Maloo
-
-2nd place in IoT-based Hackathon.
+Research: Co-authored CSRF vulnerability research with Dr. Tejas Bhatt using DVWA, analyzing attack execution and mitigation strategies. (2025)
+2nd place — IoT-Based Hackathon.
+Active in GLS University Cybersecurity Club and CTF competitions (WWCTF 2025), including DEF CON Ahmedabad meetups.
+Defined IValue Systech's Zoho-consulting USP and identified new client-acquisition channels as part of business-development work.
 
 🛠️ SKILLS
-Languages: C++, Python, Java, SQL, Dart, HTML, CSS, JavaScript, PHP
-Tools: Burp Suite, Nikto, Wireshark, Nmap, Cisco Packet Tracer, Kali Linux, OWASP ZAP
-Soft Skills: Active Listener, Critical Thinking, Problem Solving, Communication
+Zoho Ecosystem: Creator, CRM, Campaigns, Marketing Automation, Payroll, People, Expense, Backstage, Billing, Books, Analytics, Forms, Cliq, Agent AI, Deluge Scripting
+Languages: Python, TypeScript, JavaScript, C++, Java, SQL, Dart, HTML, CSS, PHP
+Frameworks & Data: React, Three.js, NestJS, FastAPI, Prisma, PostgreSQL, MySQL, MongoDB, SQLAlchemy
+AI & Automation: Claude API, Claude Code, Zoho Agent AI, MCP
+Cloud & DevOps: Vercel, Railway, Cloudflare (Pages, R2), Supabase, AWS S3, Redis, BullMQ
+Security Tools: Burp Suite, OWASP ZAP, Nikto, Wireshark, Nmap, Kali Linux, Cisco Packet Tracer
+Soft Skills: Client Requirement Analysis, Solution Design, Technical Documentation, Stakeholder Demos, Active Listening, Critical Thinking, Problem Solving
 
 📜 CERTIFICATES
 Cybersecurity Analyst Job Simulation — Forage

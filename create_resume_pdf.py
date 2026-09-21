@@ -1,3 +1,5 @@
+import re
+
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
@@ -5,6 +7,25 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.units import inch
+
+# reportlab's base fonts have no emoji glyphs, so strip them before rendering
+# (they stay in resume.txt for the webpage, which renders them fine).
+EMOJI_PATTERN = re.compile(
+    "["
+    "\U0001F300-\U0001FAFF"
+    "\U00002600-\U000027BF"
+    "\U0001F1E0-\U0001F1FF"
+    "\U00002190-\U000021FF"
+    "\U00002B00-\U00002BFF"
+    "\U0000FE0F"
+    "]+",
+    flags=re.UNICODE,
+)
+
+
+def strip_emoji(text):
+    return EMOJI_PATTERN.sub('', text).strip()
+
 
 def create_pdf():
     doc = SimpleDocTemplate(
@@ -41,9 +62,10 @@ def create_pdf():
 
     # Convert content to paragraphs
     story = []
-    for line in content.split('\n'):
-        if line.strip():
-            if any(section in line for section in ['OBJECTIVE', 'EDUCATION', 'SKILLS', 'PROJECTS', 'CERTIFICATIONS', 'WORKSHOPS', 'CAREER', 'LANGUAGES']):
+    for raw_line in content.split('\n'):
+        line = strip_emoji(raw_line)
+        if line:
+            if any(section in line for section in ['SUMMARY', 'EDUCATION', 'EXPERIENCE', 'PROJECTS', 'ACHIEVEMENTS', 'SKILLS', 'CERTIFICATES']):
                 story.append(Paragraph(line, styles['Header']))
             else:
                 story.append(Paragraph(line, styles['CustomBody']))

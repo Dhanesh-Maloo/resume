@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}404 — Page Not Found | Dhanesh Maloo{% endblock %}
+{% block content %}
+<div class="section error-page reveal is-visible">
+    <p class="eyebrow">// ERROR 404</p>
+    <h1 class="error-title">Page Not Found</h1>
+    <p class="terminal-line">
+        $ curl {{ request.path }}<br>
+        &gt; 404 &mdash; route doesn&rsquo;t exist<span class="cursor"></span>
+    </p>
+    <p class="error-desc">The page you're looking for has moved, been renamed, or never existed. Let's get you back on track.</p>
+    <div class="hero-actions">
+        <a href="/" class="button">Back Home</a>
+        <a href="/experience" class="button outline-dark">View Experience</a>
+    </div>
+</div>
+{% endblock %}

@@ -36,13 +36,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  /* ---------- 3D tilt-on-hover for cards ---------- */
+  /* ---------- Subtle tilt-on-hover for small tiles ---------- */
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var canHover = window.matchMedia('(hover: hover)').matches;
 
   if (!reduceMotion && canHover) {
-    var tiltEls = document.querySelectorAll('.card, .skill-card, .project-card, .stat-card');
-    var maxTilt = 8; // degrees
+    // Scoped to small, self-contained tiles only — large blocks like
+    // .card (timeline, contact form, pull-quote) felt gimmicky tilting.
+    var tiltEls = document.querySelectorAll('.skill-card, .project-card, .stat-card');
+    var maxTilt = 4; // degrees — kept subtle rather than showy
 
     tiltEls.forEach(function (el) {
       el.addEventListener('mousemove', function (e) {
@@ -57,13 +59,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
         this.style.transition = '';
         this.style.transform =
-          'perspective(800px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translateZ(10px)';
+          'perspective(800px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translateZ(4px)';
       });
 
       el.addEventListener('mouseleave', function () {
         this.style.transition = 'transform 0.4s ease';
         this.style.transform = 'perspective(800px) rotateX(0) rotateY(0) translateZ(0)';
       });
+    });
+  }
+
+  /* ---------- Theme toggle ---------- */
+  var themeToggle = document.getElementById('theme-toggle');
+  var themeIcon = themeToggle ? themeToggle.querySelector('.theme-icon') : null;
+  var THEME_KEY = 'theme-preference';
+  var prefersDarkMq = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function isDarkActive() {
+    var attr = document.documentElement.getAttribute('data-theme');
+    if (attr === 'dark') return true;
+    if (attr === 'light') return false;
+    return prefersDarkMq.matches;
+  }
+
+  function syncThemeUI() {
+    var dark = isDarkActive();
+    if (themeIcon) {
+      themeIcon.textContent = dark ? '☀️' : '🌙';
+    }
+    if (themeToggle) {
+      themeToggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+    }
+  }
+
+  syncThemeUI();
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      var next = isDarkActive() ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem(THEME_KEY, next); } catch (e) {}
+      syncThemeUI();
     });
   }
 
