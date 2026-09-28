@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
+{% block title %}Experience & Projects | Dhanesh Maloo{% endblock %}
+{% block og_title %}Experience & Projects | Dhanesh Maloo{% endblock %}
+{% block twitter_title %}Experience & Projects | Dhanesh Maloo{% endblock %}
+{% block og_description %}Internships, full-stack builds, security labs, certifications, and achievements.{% endblock %}
+{% block twitter_description %}Internships, full-stack builds, security labs, certifications, and achievements.{% endblock %}
 {% block content %}
 <div class="section section-header reveal">
     <span class="eyebrow">Career</span>
@@ -13,7 +18,7 @@
             <div class="timeline-item">
                 <h4>Web Developer / Zoho Solutions Engineer &mdash; iValue Systech Pvt. Ltd.</h4>
                 <span>February 2026 &ndash; Present &middot; Ahmedabad, Gujarat &middot; On-site</span>
-                <p>Delivering custom Zoho Creator applications (Warehouse Management, ShiftSync HRMS, Attendance, Asset Management, Courier Zone Automation, Payroll) and architecting IValue WMS, a multi-tenant IT-asset lifecycle platform (React, NestJS, PostgreSQL) with an append-only billing ledger and SLA engine. Also run client requirement analysis, gap analysis, and demos across CRM, Campaigns, Payroll, People, and Backstage, alongside AI-assisted tooling with Zoho Agent AI, Claude API, and Claude Code.</p>
+                <p>Delivering custom Zoho Creator applications (Warehouse Management, ShiftSync HRMS, Attendance, Asset Management, FMS Engineer App, Courier Zone Automation, Stationery Management, Payroll) and architecting IValue WMS, a multi-tenant IT-asset lifecycle platform (React, NestJS, PostgreSQL) with an append-only billing ledger and SLA engine. Also run client requirement analysis, gap analysis, and demos across CRM, Campaigns, Payroll, People, and Backstage, alongside AI-assisted tooling with Zoho Agent AI, Claude API, and Claude Code.</p>
             </div>
             <div class="timeline-item">
                 <h4>Penetration Tester &mdash; Deltaware Solutions</h4>
@@ -37,42 +42,8 @@
 <div class="section reveal">
     <h3 class="cat-title">Software Projects</h3>
     <div class="project-grid">
-        <div class="project-card">
-            <h3>PitaJi Finance Manager</h3>
-            <span class="project-meta">Full-Stack &middot; Personal Finance</span>
-            <ul>
-                <li>Built a unified dashboard to track Indian financial holdings &mdash; FDs, RDs, PPF, mutual funds, stocks, gold, insurance, and loans &mdash; with net-worth history and maturity alerts.</li>
-                <li>Developed an Indian income-tax (ITR) helper and capital-gains calculator as dedicated backend modules.</li>
-                <li>Added OCR-based FD receipt scanning to auto-fill deposit forms from a photo, plus PDF/Excel report exports and a rule-based finance chatbot.</li>
-            </ul>
-            <div class="tag-row">
-                <span class="tag">FastAPI</span>
-                <span class="tag">MongoDB</span>
-                <span class="tag">React</span>
-            </div>
-            <div class="project-links">
-                <a href="https://github.com/dhanesh-maloo/pitaji-finance" target="_blank" rel="noopener">GitHub</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <h3>IT Asset Management Platform</h3>
-            <span class="project-meta">Full-Stack &middot; Built at iValue Systech</span>
-            <ul>
-                <li>Built a multi-tenant asset-tracking platform with 5 role tiers, isolating each tenant's data across 140+ API routes.</li>
-                <li>Implemented the full asset lifecycle &mdash; bulk import, QR-code labels, transfers, reservations &mdash; plus a helpdesk ticketing system with approval workflows.</li>
-                <li>Added a background scheduler that notifies tenant admins over Slack about warranty/maintenance deadlines, with a pytest suite covering auth, assets, and billing.</li>
-            </ul>
-            <div class="tag-row">
-                <span class="tag">FastAPI</span>
-                <span class="tag">MongoDB</span>
-                <span class="tag">React</span>
-            </div>
-            <div class="project-links">
-                <a href="https://asset-management-git-main-ivalueindia.vercel.app/login" target="_blank" rel="noopener">Live Demo</a>
-                <a href="https://github.com/dhanesh-maloo/asset-management" target="_blank" rel="noopener">GitHub</a>
-            </div>
-        </div>
-        <div class="project-card">
+        <div class="project-card featured">
+            <span class="featured-badge">Flagship</span>
             <h3>Warehouse Management System</h3>
             <span class="project-meta">Full-Stack &middot; Built at iValue Systech</span>
             <ul>
@@ -91,34 +62,23 @@
                 <a href="https://github.com/dhanesh-maloo/warehouse-mangement-system-" target="_blank" rel="noopener">GitHub</a>
             </div>
         </div>
-        <div class="project-card">
-            <h3>ShiftSync</h3>
+        <div class="project-card featured">
+            <span class="featured-badge">Flagship</span>
+            <h3>IT Asset Management Platform</h3>
             <span class="project-meta">Full-Stack &middot; Built at iValue Systech</span>
             <ul>
-                <li>Built a standalone attendance and shift-rostering app for staff working dynamic, multiple shifts, as a zero-license-cost alternative to Zoho People.</li>
-                <li>Implemented geofenced check-in/check-out, leave management, and payroll export from a single roster view.</li>
+                <li>Built a multi-tenant asset-tracking platform with 5 role tiers, isolating each tenant's data across 140+ API routes.</li>
+                <li>Implemented the full asset lifecycle &mdash; bulk import, QR-code labels, transfers, reservations &mdash; plus a helpdesk ticketing system with approval workflows.</li>
+                <li>Added a background scheduler that notifies tenant admins over Slack about warranty/maintenance deadlines, with a pytest suite covering auth, assets, and billing.</li>
             </ul>
             <div class="tag-row">
+                <span class="tag">FastAPI</span>
+                <span class="tag">MongoDB</span>
                 <span class="tag">React</span>
-                <span class="tag">Supabase</span>
-                <span class="tag">Cloudflare Pages</span>
-            </div>
-        </div>
-        <div class="project-card">
-            <h3>LinkGuard</h3>
-            <span class="project-meta">Flask &middot; Phishing Detection</span>
-            <ul>
-                <li>Built a phishing-detection scanner that analyzes URLs for brand impersonation, shortener abuse, IP-literal hosts, and missing HTTPS.</li>
-                <li>Wrote an email-analysis module that parses raw headers/content to flag sender-domain mismatches, urgency language, and risky attachments, producing a 0&ndash;100 risk score.</li>
-                <li>Implemented account signup/login with hashed passwords on a Flask backend.</li>
-            </ul>
-            <div class="tag-row">
-                <span class="tag">Python</span>
-                <span class="tag">Flask</span>
-                <span class="tag">SQLAlchemy</span>
             </div>
             <div class="project-links">
-                <a href="https://github.com/dhanesh-maloo/link-guard" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://asset-management-git-main-ivalueindia.vercel.app/login" target="_blank" rel="noopener">Live Demo</a>
+                <a href="https://github.com/dhanesh-maloo/asset-management" target="_blank" rel="noopener">GitHub</a>
             </div>
         </div>
         <div class="project-card">
@@ -137,6 +97,53 @@
             </div>
             <div class="project-links">
                 <a href="https://github.com/Dhanesh-Maloo/vulnerability-assement" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>ShiftSync</h3>
+            <span class="project-meta">Full-Stack &middot; Built at iValue Systech</span>
+            <ul>
+                <li>Built a standalone attendance and shift-rostering app for staff working dynamic, multiple shifts, as a zero-license-cost alternative to Zoho People.</li>
+                <li>Implemented geofenced check-in/check-out, leave management, and payroll export from a single roster view.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">React</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Cloudflare Pages</span>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>PitaJi Finance Manager</h3>
+            <span class="project-meta">Full-Stack &middot; Personal Finance</span>
+            <ul>
+                <li>Built a unified dashboard to track Indian financial holdings &mdash; FDs, RDs, PPF, mutual funds, stocks, gold, insurance, and loans &mdash; with net-worth history and maturity alerts.</li>
+                <li>Developed an Indian income-tax (ITR) helper and capital-gains calculator as dedicated backend modules.</li>
+                <li>Added OCR-based FD receipt scanning to auto-fill deposit forms from a photo, plus PDF/Excel report exports and a rule-based finance chatbot.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">FastAPI</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">React</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/dhanesh-maloo/pitaji-finance" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>LinkGuard</h3>
+            <span class="project-meta">Flask &middot; Phishing Detection</span>
+            <ul>
+                <li>Built a phishing-detection scanner that analyzes URLs for brand impersonation, shortener abuse, IP-literal hosts, and missing HTTPS.</li>
+                <li>Wrote an email-analysis module that parses raw headers/content to flag sender-domain mismatches, urgency language, and risky attachments, producing a 0&ndash;100 risk score.</li>
+                <li>Implemented account signup/login with hashed passwords on a Flask backend.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">SQLAlchemy</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/dhanesh-maloo/link-guard" target="_blank" rel="noopener">GitHub</a>
             </div>
         </div>
         <div class="project-card">
@@ -202,6 +209,13 @@
             <div>
                 <div class="cert-name">Cybersecurity Club &amp; CTF Competitions</div>
                 <div class="cert-org">WWCTF 2025 &middot; GLS University Cybersecurity Club &middot; DEF CON Ahmedabad meetups</div>
+            </div>
+        </div>
+        <div class="cert-item">
+            <span class="cert-badge">📈</span>
+            <div>
+                <div class="cert-name">Defined iValue Systech's Zoho-Consulting USP</div>
+                <div class="cert-org">Identified new client-acquisition channels as part of business-development work</div>
             </div>
         </div>
     </div>

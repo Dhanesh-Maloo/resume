@@ -15,6 +15,8 @@
     </script>
     <title>{% block title %}Dhanesh Maloo | AI Builder, Zoho Developer & Cybersecurity Grad{% endblock %}</title>
     <meta name="description" content="Dhanesh Maloo — AI Builder, Zoho Developer &amp; Cybersecurity grad. Wired to build, trained to break.">
+    <meta name="theme-color" content="#0a1128" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0e14" media="(prefers-color-scheme: dark)">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
 
     <meta property="og:type" content="website">
@@ -24,14 +26,17 @@
     <meta property="og:image" content="https://resume-nu-five-95.vercel.app/static/og-image.png">
     <meta property="og:url" content="https://resume-nu-five-95.vercel.app{{ request.path }}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dhanesh Maloo | AI Builder, Zoho Developer & Cybersecurity Grad">
-    <meta name="twitter:description" content="Tech x Business — Zoho, AI, and Cybersecurity. Wired to build, trained to break.">
+    <meta name="twitter:title" content="{% block twitter_title %}Dhanesh Maloo | AI Builder, Zoho Developer & Cybersecurity Grad{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}Tech x Business — Zoho, AI, and Cybersecurity. Wired to build, trained to break.{% endblock %}">
     <meta name="twitter:image" content="https://resume-nu-five-95.vercel.app/static/og-image.png">
+    <link rel="canonical" href="https://resume-nu-five-95.vercel.app{{ request.path }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% block structured_data %}{% endblock %}
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <header>
         <nav class="navbar">
             <a href="/" class="logo"><span class="bracket">&lt;</span>Dhanesh<span class="bracket">/&gt;</span></a>
@@ -51,7 +56,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         {% block content %}{% endblock %}
     </main>
 

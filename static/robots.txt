@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://resume-nu-five-95.vercel.app/sitemap.xml

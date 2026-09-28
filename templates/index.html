@@ -1,4 +1,30 @@
 {% extends 'base.html' %}
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dhanesh Maloo",
+  "jobTitle": "Web Developer / Zoho Solutions Engineer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "iValue Systech Pvt. Ltd."
+  },
+  "url": "https://resume-nu-five-95.vercel.app/",
+  "image": "https://resume-nu-five-95.vercel.app/static/dhanesh-photo.jpg",
+  "email": "mailto:dhaneshmaloo09@gmail.com",
+  "sameAs": [
+    "https://github.com/Dhanesh-Maloo",
+    "https://www.linkedin.com/in/dhanesh-maloo-27228124b/"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "GLS University, Ahmedabad"
+  },
+  "knowsAbout": ["Zoho Development", "AI Automation", "Vulnerability Assessment and Penetration Testing", "Web Security"]
+}
+</script>
+{% endblock %}
 {% block content %}
 <div class="hero">
     <img src="{{ url_for('static', filename='dhanesh-photo.jpg') }}" alt="Dhanesh Maloo" class="avatar avatar-lg">
@@ -21,6 +47,122 @@
         $ whoami<br>
         &gt; dhanesh_maloo &mdash; builder / breaker<span class="cursor"></span>
     </p>
-    <a href="/about" class="scroll-cue">Learn more &darr;</a>
+    <a href="#what-i-do" class="scroll-cue">Learn more &darr;</a>
+</div>
+
+<div class="section stat-strip reveal">
+    <div class="stat-grid">
+        <div class="stat-card">
+            <div class="stat-num">8.95</div>
+            <div class="stat-label">SGPA (BTech)</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">#6</div>
+            <div class="stat-label">Class Rank</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">7+</div>
+            <div class="stat-label">Projects Shipped</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Roles &amp; Internships</div>
+        </div>
+    </div>
+</div>
+
+<div class="section section-header reveal" id="what-i-do">
+    <span class="eyebrow">What I Do</span>
+    <h2>Four Ways I Add Value</h2>
+    <p>A hands-on mix of building with Zoho and AI, and breaking things on purpose to make them stronger.</p>
+</div>
+
+<div class="section reveal">
+    <div class="skill-grid">
+        <div class="skill-card">
+            <span class="skill-icon">⚡</span>
+            <h3>Zoho Development</h3>
+            <p>Custom Creator apps, CRM/Flow/Backstage integrations, and Deluge scripting that remove repetitive manual work.</p>
+        </div>
+        <div class="skill-card">
+            <span class="skill-icon">🤖</span>
+            <h3>AI &amp; Automation</h3>
+            <p>Wiring Claude API and Claude Code into real workflows &mdash; task bots, an HR assistant, duplicate-receipt detection.</p>
+        </div>
+        <div class="skill-card">
+            <span class="skill-icon">🛡️</span>
+            <h3>VAPT &amp; Security</h3>
+            <p>Vulnerability assessment and penetration testing backed by a Cybersecurity BTech and hands-on client engagements.</p>
+        </div>
+        <div class="skill-card">
+            <span class="skill-icon">💻</span>
+            <h3>Full-Stack Engineering</h3>
+            <p>Multi-tenant platforms in React, NestJS, FastAPI, and PostgreSQL &mdash; designed, built, and shipped to production.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section section-header reveal">
+    <span class="eyebrow">Featured Work</span>
+    <h2>Selected Projects</h2>
+    <p>Production platforms and security tooling I've designed and shipped end to end.</p>
+</div>
+
+<div class="section reveal">
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Warehouse Management System</h3>
+            <span class="project-meta">Full-Stack &middot; Built at iValue Systech</span>
+            <p>Multi-tenant IT-asset lifecycle platform covering deployment, retrieval, repair/resale, and disposal &mdash; with an append-only billing ledger and a business-hours-aware SLA engine.</p>
+            <div class="tag-row">
+                <span class="tag">React</span>
+                <span class="tag">NestJS</span>
+                <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+                <a href="https://warehouse-mangement-system-web.vercel.app/login" target="_blank" rel="noopener">Live Demo</a>
+                <a href="https://github.com/dhanesh-maloo/warehouse-mangement-system-" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>IT Asset Management Platform</h3>
+            <span class="project-meta">Full-Stack &middot; Built at iValue Systech</span>
+            <p>Multi-tenant asset-tracking platform with 5 role tiers, isolating tenant data across 140+ API routes &mdash; plus QR-code labels, transfers, and helpdesk ticketing.</p>
+            <div class="tag-row">
+                <span class="tag">FastAPI</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">React</span>
+            </div>
+            <div class="project-links">
+                <a href="https://asset-management-git-main-ivalueindia.vercel.app/login" target="_blank" rel="noopener">Live Demo</a>
+                <a href="https://github.com/dhanesh-maloo/asset-management" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Vulnerability Assessment Platform</h3>
+            <span class="project-meta">Self-Hosted &middot; VAPT &middot; AI Copilot</span>
+            <p>Self-hosted VA platform combining nmap/OWASP ZAP scanning with CVSS/EPSS/KEV risk scoring, findings triage, and an AI security copilot powered by the Claude API.</p>
+            <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Claude API</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Dhanesh-Maloo/vulnerability-assement" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </div>
+    <div class="view-all-cta">
+        <a href="/experience" class="button outline-dark">View All Projects &amp; Experience &rarr;</a>
+    </div>
+</div>
+
+<div class="section cta-band reveal">
+    <h2>Have a Zoho, AI, or Security Project in Mind?</h2>
+    <p>I'm always up for a conversation about automation, secure architecture, or turning a messy manual process into something that just works.</p>
+    <div class="hero-actions">
+        <a href="/contact" class="button">Let's Talk</a>
+        <a href="/static/Dhanesh_Cybersecurity_Resume.pdf" class="button outline" download>Download Resume</a>
+    </div>
 </div>
 {% endblock %}
