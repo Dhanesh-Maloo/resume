@@ -127,7 +127,7 @@ header {
 }
 
 .navbar {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -232,10 +232,21 @@ header {
 
 /* ---------- LAYOUT ---------- */
 main {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 3rem 1.5rem 5rem;
     min-height: 70vh;
+}
+
+/* Breaks an element out of main's centered column to true viewport
+   width, matching how the nav/footer bands already span edge to edge. */
+.full-bleed {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 h1, h2, h3 {
@@ -311,16 +322,29 @@ textarea:focus-visible {
 /* ---------- HERO ---------- */
 .hero {
     text-align: center;
-    margin: -3rem -1.5rem 4rem;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: -3rem;
+    margin-bottom: 4rem;
     padding: 5rem 1.5rem 4rem;
     background:
         radial-gradient(circle at 18% 22%, rgba(91, 141, 255, 0.16), transparent 42%),
         radial-gradient(circle at 82% 12%, rgba(52, 211, 153, 0.12), transparent 38%),
         linear-gradient(160deg, var(--navy) 0%, var(--navy-alt) 100%);
-    border-radius: 0 0 28px 28px;
     animation: fade-up 0.8s ease both;
-    position: relative;
     overflow: hidden;
+}
+
+.hero-title,
+.hero-desc,
+.hero-sub {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero .avatar {
@@ -773,7 +797,13 @@ textarea:focus-visible {
 .ticker {
     overflow: hidden;
     background: linear-gradient(90deg, var(--navy) 0%, var(--navy-alt) 100%);
-    margin: 0 -1.5rem 3.5rem;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: 3.5rem;
     padding: 0.9rem 0;
     white-space: nowrap;
     -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
@@ -819,7 +849,7 @@ textarea:focus-visible {
 
 @media (max-width: 860px) {
     .ticker {
-        margin: 0 -1rem 3rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -1002,7 +1032,7 @@ textarea:focus-visible {
 }
 
 .footer-inner {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
     display: flex;
@@ -1162,8 +1192,7 @@ textarea:focus-visible {
     }
 
     .hero {
-        margin: -3rem -1rem 3rem;
-        border-radius: 0 0 20px 20px;
+        margin-bottom: 3rem;
     }
 
     .hero-3d-canvas {
