@@ -27,6 +27,7 @@
 {% endblock %}
 {% block content %}
 <div class="hero">
+    <canvas id="hero-3d" class="hero-3d-canvas" aria-hidden="true"></canvas>
     <img src="{{ url_for('static', filename='dhanesh-photo.jpg') }}" alt="Dhanesh Maloo" class="avatar avatar-lg">
     <p class="eyebrow">// AI BUILDER &middot; ZOHO DEVELOPER &middot; CYBERSECURITY GRAD</p>
     <h1 class="hero-title">
@@ -48,6 +49,23 @@
         &gt; dhanesh_maloo &mdash; builder / breaker<span class="cursor"></span>
     </p>
     <a href="#what-i-do" class="scroll-cue">Learn more &darr;</a>
+</div>
+
+<div class="ticker reveal" aria-hidden="true">
+    <div class="ticker-track">
+        <span class="ticker-item">⚡ Zoho Creator, CRM, Flow &amp; Backstage</span>
+        <span class="ticker-item">🤖 Claude API &amp; Claude Code Automation</span>
+        <span class="ticker-item">🛡️ VAPT &amp; Penetration Testing</span>
+        <span class="ticker-item">💻 React &middot; NestJS &middot; FastAPI &middot; PostgreSQL</span>
+        <span class="ticker-item">🏆 2nd Place &mdash; IoT Hackathon</span>
+        <span class="ticker-item">📜 BTech Cybersecurity &mdash; SGPA 8.95, Rank #6</span>
+        <span class="ticker-item">⚡ Zoho Creator, CRM, Flow &amp; Backstage</span>
+        <span class="ticker-item">🤖 Claude API &amp; Claude Code Automation</span>
+        <span class="ticker-item">🛡️ VAPT &amp; Penetration Testing</span>
+        <span class="ticker-item">💻 React &middot; NestJS &middot; FastAPI &middot; PostgreSQL</span>
+        <span class="ticker-item">🏆 2nd Place &mdash; IoT Hackathon</span>
+        <span class="ticker-item">📜 BTech Cybersecurity &mdash; SGPA 8.95, Rank #6</span>
+    </div>
 </div>
 
 <div class="section stat-strip reveal">
@@ -165,4 +183,8 @@
         <a href="/static/Dhanesh_Cybersecurity_Resume.pdf" class="button outline" download>Download Resume</a>
     </div>
 </div>
+{% endblock %}
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="{{ url_for('static', filename='hero3d.js') }}" defer></script>
 {% endblock %}
