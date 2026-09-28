@@ -339,9 +339,7 @@ textarea:focus-visible {
     overflow: hidden;
 }
 
-.hero-title,
-.hero-desc,
-.hero-sub {
+.hero-desc {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -357,10 +355,11 @@ textarea:focus-visible {
 }
 
 .hero-title {
+    max-width: 900px;
     font-size: clamp(2.2rem, 6vw, 3.6rem);
     font-weight: 800;
     line-height: 1.15;
-    margin: 1rem 0;
+    margin: 1rem auto;
     color: #fff;
 }
 
